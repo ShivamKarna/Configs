@@ -1,0 +1,158 @@
+{
+  "terminal.integrated.enableTrueColor": true,
+  "github.copilot.chat.enableModelSelection": true,
+  "github.copilot.chat.enablePreview": true,
+  "github.copilot.chat.experimentalFeatures": true,
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.fontFamily": "\"Monospace Neon\"",
+  "editor.fontSize": 18,
+  "editor.lineHeight": 1.5,
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorWidth": 2,
+  "editor.cursorSurroundingLines": 1,
+  "workbench.list.smoothScrolling": true,
+  "workbench.editor.empty.hint": "hidden",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.initialHint": false,
+  "window.menuBarVisibility": "compact",
+  "window.zoomLevel": 0.5,
+  "editor.padding.top": 1,
+  "editor.padding.bottom": 1,
+  "editor.minimap.autohide": "scroll",
+  "material-icon-theme.folders.color": "#26a69a",
+  "chat.enableModelSelection": true,
+  "chat.enablePreview": true,
+  "chat.commandCenter.enabled": false,
+  "chat.viewSessions.orientation": "stacked",
+  "nextEditSuggestions.enabled": true,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "masmtasm.ASM.assembler": "MASM-v6.11",
+  "masmtasm.dosbox.run": "keep",
+  "masmtasm.ASM.emulator": "dosbox",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "assembly": false,
+    "dotenv": false,
+  },
+  "workbench.layoutControl.enabled": false,
+  "workbench.browser.showInTitleBar": false,
+
+  // MERGED & UPGRADED VIM SHORTCUTS
+  "vim.enabled": true,
+  "vim.useSystemClipboard": true,
+  "vim.overrideCopy": false,
+  "vim.highlightedyank.enable": true,
+  "vim.leader": "<space>",
+
+  // Insert Mode Escapes (jk, jj, kk)
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"],
+    },
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"],
+    },
+    {
+      "before": ["k", "k"],
+      "after": ["<Esc>"],
+    },
+  ],
+
+  // Visual Mode: Move lines up and down using Shift+J and Shift+K
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["J"],
+      "commands": ["editor.action.moveLinesDownAction"],
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.moveLinesUpAction"],
+    },
+  ],
+
+  // Normal Mode Keybindings Non-Recursive
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.action.quickOpen"],
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.files.save"],
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"],
+    },
+    {
+      "before": ["<leader>", "o"],
+      "commands": ["workbench.action.showAllEditorsByMostRecentlyUsed"],
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.outline.focus"],
+    },
+    // Layout & Panes
+    {
+      "before": ["ctrl+w", "z"],
+      "commands": ["workbench.action.toggleEditorWidths"],
+    },
+    {
+      "before": ["ctrl+w", "t"],
+      "commands": ["workbench.action.terminal.toggleTerminal"],
+    },
+    // Code Actions & LSP
+    {
+      "before": ["<leader>", "l", "a"],
+      "commands": ["editor.action.quickFix"],
+    },
+    {
+      "before": ["<leader>", "l", "r"],
+      "commands": ["editor.action.rename"],
+    },
+    {
+      "before": ["<leader>", "l", "f"],
+      "commands": ["editor.action.formatDocument"],
+    },
+    {
+      "before": ["<leader>", "l", "l"],
+      "commands": ["workbench.action.showErrorsWarnings"],
+    },
+    {
+      "before": ["<leader>", "v"],
+      "commands": ["editor.action.revealDefinitionAside"],
+    },
+    {
+      "before": ["g", "c", "c"],
+      "commands": ["editor.action.commentLine"],
+    },
+    // Diagnostics / Errors
+    {
+      "before": ["g", "]"],
+      "commands": ["editor.action.marker.next"],
+    },
+    {
+      "before": ["g", "["],
+      "commands": ["editor.action.marker.prev"],
+    },
+  ],
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+  },
+}
